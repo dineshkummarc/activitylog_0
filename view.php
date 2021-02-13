@@ -1,6 +1,6 @@
 <?php
 require('timezone.php');
-// require('dbconnect.php');
+require('dbconnect.php');
 //error_reporting(~E_NOTICE);
 function start_session()
 {
