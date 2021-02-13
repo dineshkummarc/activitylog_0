@@ -15,7 +15,7 @@ if(empty($_SESSION['user']))
 echo start_session();
 function db_query()
 {
-	$conn=connect();
+	// $conn=connect();
 $stmt=$conn->prepare( "SELECT * FROM users where user_id=:uid") ;
 if($stmt->execute(['uid'=>$_SESSION['user']]))
 {
