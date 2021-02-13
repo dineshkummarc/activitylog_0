@@ -15,14 +15,7 @@ if(empty($_SESSION['user']))
 echo start_session();
 function db_query()
 {
-	// $conn=connect();
-	$servername = "localhost";
-    $username = "root";
-    $password = "";
-    $dbname = "activitylog";
-
-    $conn = mysqli_connect($servername, $username, $password, $dbname);
-	
+	$conn=connect();
 $stmt=$conn->prepare( "SELECT * FROM users where user_id=:uid") ;
 if($stmt->execute(['uid'=>$_SESSION['user']]))
 {
