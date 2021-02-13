@@ -6,7 +6,7 @@ $username = "root";
 $password = "";
 
 try {
-  $conn = mysqli_connect($servername, $username, $password, $dbname);
+  $conn = new PDO("mysql:host=$servername;dbname=activitylog", $username, $password);
   // set the PDO error mode to exception
   $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
   echo "Connected successfully";
