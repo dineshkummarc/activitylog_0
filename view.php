@@ -1,6 +1,6 @@
 <?php
 require('timezone.php');
-require('dbconnect.php');
+// require('dbconnect.php');
 //error_reporting(~E_NOTICE);
 function start_session()
 {
@@ -15,7 +15,15 @@ if(empty($_SESSION['user']))
 echo start_session();
 function db_query()
 {
-	$conn=connect();
+	// $conn=connect();
+	
+	$servername = "localhost";
+    $username = "root";
+    $password = "";
+    $dbname = "activitylog";
+
+  $conn = new PDO("mysql:host=$servername;dbname=$dbname", $username, $password);
+	
 $stmt=$conn->prepare( "SELECT * FROM users where user_id=:uid") ;
 if($stmt->execute(['uid'=>$_SESSION['user']]))
 {
