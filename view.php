@@ -192,7 +192,7 @@ box-shadow: 0 5px 10px 0 rgba(1, 1, 1, 0.2);
 	while($roww = $query->fetch())
 	{
 	$user_id = $roww['user_id'];
-	$user_status = $roww['user_status'];
+	// $user_status = $roww['user_status'];
 			?>
 <?php
 echo '<h6>'.'<b>'.'<p class="text-primary">'.$roww['name']
