@@ -68,19 +68,19 @@ bottom:30px;
 <div class="panel-body">
 <form method="POST" id="register-form">
    <div class="form-group">
-<label class="control-label" for="name">FULL NAME</label>
+<label class="control-label" for="name">FULL NAME:</label>
 <input class="form-control input-sm" type="text" name="name" />
 </div>
 <div class="form-group">
-<label class="control-label" for="email">E- MAIL ADRESS</label>
+<label class="control-label" for="email">E- MAIL ADRESS:</label>
 <input class="form-control input-sm" type="email" name="email" id="email" />
 </div>
 <div class="form-group">
-<label class="control-label" for="url">URL</label>
+<label class="control-label" for="url">URL:</label>
 <input class="form-control input-sm" type="text" name="url" />
 </div>
 <div class="form-group">
-<label class="control-label" for="password">PASSWORD</label>
+<label class="control-label" for="password">PASSWORD:</label>
 <input class="form-control input-sm" type="password" name="password" />
 </div>
 
