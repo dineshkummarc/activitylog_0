@@ -85,11 +85,11 @@ echo $_SESSION['msg'];
 			unset($_SESSION['msg']);
 		?>  
 <form method="post" enctype="multipart/form-data" class="form-horizontal">
-<label class="control-label"></label>
+<label class="control-label">Username:</label>
 <div class="form-group">
 <input type="text" class="form-control" name="name" required />
     </div>
-<label class="control-label"></label>
+<label class="control-label">Password:</label>
 <div class="form-group">
 <input type="password" class="form-control" name="password" required />
 </div>
@@ -98,7 +98,7 @@ echo $_SESSION['msg'];
 <span class="glyphicon glyphicon-log-in">
 </span>
 </button>
-<p class="text-danger" id="pp"><a href="register.php">click here to register</a></p>
+<p class="text-danger" id="pp"><a href="register.php">Click here to register</a></p>
 </div> 
 </div>
 </div>
